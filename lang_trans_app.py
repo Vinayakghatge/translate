@@ -12,7 +12,7 @@ import json
 import requests
 import time
 
-st.title("Multi Language Translation Model")
+st.title("Vmax Language Translation Model")
 default_text = ''
 text_inp = st.text_input("InputText:", default_text)
 
@@ -20,7 +20,7 @@ text_inp = st.text_input("InputText:", default_text)
 API_KEY = st.text_input("Enter your HuggingFace API key", type="password")
 
 # HuggingFace API inference URL.
-API_URL = "https://api-inference.huggingface.co/models/Helsinki-NLP/opus-mt-mul-en"
+API_URL = "https://api-inference.huggingface.co/models/Helsinki-NLP/opus-mt-zh-en"
 
 headers = {"Authorization": f"Bearer {API_KEY}"}
 
