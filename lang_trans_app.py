@@ -37,13 +37,13 @@ if submit_button:
         return response.json()
 
     with st.spinner('Doing some AI magic, please wait...'):
-        time.sleep(1)
+        time.sleep(3)
 
         # Query the API
         output = query({"inputs": text_inp, })
 
        # Display the results
         #translate = output[0]['translation_text'].replace('<n>', " ")
-        translate = output[0]['translation_text']
+        #translate = output[0]['translation_text']
         st.write(f"Your Input Text: **{text_inp}**")
-        st.write(f"Your Transalted Output is **{translate}**")
+        st.write(f"Your Transalted Output is **{output}**")
